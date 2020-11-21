@@ -9,12 +9,10 @@
       margin-left: 47px
     &-menu
       padding: 19px 14px 21px 14px
-
       &__link
         font-size: 12px
     &-top
       padding: 30px 0
-
   .logo
     width: 133px
   .search
@@ -24,13 +22,12 @@
 @media (max-width: 767px)
   .container
     max-width: 576px
-    width: 92%
+    width: 88%
   .navbar
     &__search, &-menu, &__user
       display: none
     &-top
       &__menu-button
-
   .menu
     &-button
       width: 16px
@@ -48,8 +45,24 @@
         background-color: $text-color
   .logo
     width: 99px
-
-@media (max-width: 320px)
-  .container
-    max-width: 280px
-    width: 92%
+  .stars
+    flex-basis: auto
+  .hotel
+    padding-top: 5px
+    &-wrapper
+      justify-content: space-between
+      align-items: center
+    &-name
+      flex-basis: 100%
+    &-info
+      &__stars
+        margin-right: 17px
+        margin-bottom: 10px
+      &__text
+        width: 100%
+      &__rating
+        display: none
+      &__offer
+        order: -1
+        margin-left: 0
+        margin-bottom: 10px
