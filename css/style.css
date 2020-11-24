@@ -506,6 +506,15 @@ template {
   padding: 18px 0 70px 0;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .hotel-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -530,7 +539,7 @@ template {
 }
 
 .hotel-info__position {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .hotel-info__offer {
@@ -615,7 +624,8 @@ template {
 }
 
 .slider {
-  width: 728px;
+  margin-right: 0;
+  max-width: 728px;
 }
 
 .slider-button {
@@ -642,6 +652,168 @@ template {
 .slider-button__next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
+}
+
+.booking {
+  padding: 29px 29px 26px 26px;
+  border-radius: 8px;
+  background-color: #0A223D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  width: 100%;
+  min-height: 210px;
+}
+
+.booking-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__start {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.booking__pricetag {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.booking__per-room {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.booking__person-room {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 40px;
+}
+
+.booking__room {
+  margin-bottom: 5px;
+}
+
+.booking__guests {
+  margin-top: -4px;
+}
+
+.booking__guests-room {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.booking__image {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+.booking__image-home {
+  margin-right: 8px;
+}
+
+.booking__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.booking__call-choice {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.booking__call-number {
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking__call-image {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+}
+
+.booking-button {
+  width: 100%;
+  padding: 13px;
+  background-color: #EC1F46;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.booking__map {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {

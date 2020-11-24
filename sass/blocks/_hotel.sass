@@ -1,6 +1,8 @@
 .hotel
   padding: 18px 0 70px 0
-
+  &-grid
+    display: flex
+    justify-content: space-between
   &-wrapper
     display: flex
     flex-wrap: wrap
@@ -10,7 +12,7 @@
     align-items: center
     justify-content: space-between
     &__position
-      margin-bottom: 20px
+      margin-bottom: 18px
     &__offer
       margin-left: 14px
 
@@ -29,7 +31,6 @@
 .star
   &:not(:first-child)
     margin-left: -2px
-
 .offer
   font-size: 10px
   line-height: 13px
@@ -52,7 +53,6 @@
   &__counter
     font-size: 14px
     line-height: 18px
-
 .text-sub
   font-size: 10px
 .swiper-container
@@ -72,7 +72,8 @@
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     z-index: 10
 .slider
-  width: 728px
+  margin-right: 0
+  max-width: 728px
   &-button
     position: absolute
     top: 50%
@@ -89,7 +90,95 @@
     &__prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
-
     &__next
       right: 18px
       background-image: url(../img/arrow-next.svg)
+.booking
+  padding: 29px 29px 26px 26px
+  border-radius: 8px
+  background-color: $dark
+  display: flex
+  flex-direction: column
+  color: $light
+  width: 100%
+  min-height: 210px
+  &-wrap
+    display: flex
+    width: 350px
+    flex-direction: column
+    justify-content: space-between
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+
+  &__start
+    font-size: 10px
+    line-height: 12px
+
+  &__pricetag
+    font-size: 24px
+    line-height: 30px
+
+  &__per-room
+    font-size: 12px
+    line-height: 14px
+  &__person-room
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-end
+    height: 40px
+  &__room
+    margin-bottom: 5px
+  &__guests
+    margin-top: -4px
+    &-room
+      font-size: 12px
+      line-height: 14px
+
+  &__image
+    width: 14px
+    height: 14px
+    margin-right: 4px
+    &-home
+      margin-right: 8px
+  &__call
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 20px
+
+    &-choice
+      font-size: 18px
+      line-height: 25px
+
+    &-number
+      font-size: 18px
+      line-height: 25px
+      color: $light
+      text-decoration: none
+      display: flex
+      align-items: center
+
+    &-image
+      width: 14px
+      height: 14px
+      margin-right: 8px
+  &-button
+    width: 100%
+    padding: 13px
+    background-color: $primary
+    border: none
+    border-radius: 4px
+    cursor: pointer
+    color: $light
+    font-size: 14px
+    line-height: 19px
+  &__map
+    border-radius: 10px
+    overflow: hidden
