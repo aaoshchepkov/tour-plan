@@ -1166,6 +1166,10 @@ template {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .card {
+    width: 220px;
+    height: 220px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1259,6 +1263,21 @@ template {
   .reviews-slider__button--next {
     background-image: url(../img/arrow-next-secondary.svg);
     right: 0px;
+  }
+  .activities {
+    padding-bottom: 70px;
+  }
+  .activities__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .activities__card {
+    margin-bottom: 20px;
+  }
+  .card {
+    width: 339px;
+    height: 255px;
+    padding-right: 70px;
   }
 }
 
@@ -1407,6 +1426,31 @@ template {
   }
   .reviews-slider__button--next {
     right: 37px;
+  }
+  .activities {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .activities__title {
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 36px;
+  }
+  __card {
+    width: 100%;
+  }
+  .card:nth-child(2) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .card:nth-child(4) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .card:nth-child(3) {
+    margin-bottom: 28px;
   }
 }
 
