@@ -1436,8 +1436,8 @@ template {
     line-height: 23px;
     margin-bottom: 36px;
   }
-  __card {
-    width: 100%;
+  .activities__card {
+    min-width: 100%;
   }
   .card:nth-child(2) {
     -webkit-box-ordinal-group: 2;
