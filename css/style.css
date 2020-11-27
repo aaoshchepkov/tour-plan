@@ -1154,7 +1154,7 @@ template {
 }
 
 .packages {
-  padding: 40px 0 70px 0;
+  padding: 42px 0 72px 0;
 }
 
 .packages__title {
@@ -1163,7 +1163,7 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin: 0 0 65px 0;
+  margin: 0 0 64px 0;
 }
 
 .packages-card1 {
@@ -1263,12 +1263,12 @@ template {
   margin: 0 0 27px 0;
 }
 
-.packages__hotel-name {
+.packages__hotel-name2 {
   margin: 0 0 36px 0;
-  padding-left: 3px;
+  padding-left: 2px;
 }
 
-.packages__hotel-name5, .packages__hotel-name3, .packages__hotel-name4 {
+.packages__hotel-name {
   margin: 0 0 23px 0;
   padding-left: 3px;
 }
@@ -1284,6 +1284,10 @@ template {
 }
 
 .packages__guest-room {
+  margin-bottom: 24px;
+}
+
+.packages__guest-room2 {
   margin-bottom: 12px;
 }
 
