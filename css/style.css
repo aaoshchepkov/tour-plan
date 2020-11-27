@@ -1166,10 +1166,49 @@ template {
   margin: 0 0 65px 0;
 }
 
+.packages-card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: card1;
+}
+
+.packages-card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card2;
+}
+
+.packages-card3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card3;
+}
+
+.packages-card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card4;
+}
+
+.packages-card5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: card5;
+}
+
 .packages__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 500px 500px;
+      grid-template-rows: 500px 500px;
+  row-gap: 30px;
+  -ms-grid-columns: 380px 380px 380px;
+      grid-template-columns: 380px 380px 380px;
+  colomn-gap: 30px;
+      grid-template-areas: "card1 card1 card2" "card3 card4 card5";
 }
 
 .packages-card {
@@ -1187,7 +1226,7 @@ template {
 }
 
 .packages-card__secondary {
-  width: 350px;
+  max-width: 350px;
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -1196,6 +1235,10 @@ template {
 
 .packages__container {
   padding: 39px 21px 30px 43px;
+}
+
+.packages__container-secondary {
+  padding: 35px 21px 23px 30px;
 }
 
 .packages__img {
@@ -1210,14 +1253,24 @@ template {
      object-fit: cover;
   width: 100%;
   max-height: 250px;
-  margin-bottom: 30px;
+  margin-bottom: -9px;
 }
 
-.packages__hotel-name {
+.packages__hotel {
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
   margin: 0 0 27px 0;
+}
+
+.packages__hotel-name {
+  margin: 0 0 36px 0;
+  padding-left: 3px;
+}
+
+.packages__hotel-name5, .packages__hotel-name3, .packages__hotel-name4 {
+  margin: 0 0 23px 0;
+  padding-left: 3px;
 }
 
 .packages__description {
@@ -1226,8 +1279,12 @@ template {
   margin: 0 0 45px 0;
 }
 
-.packages__guest-room {
+.packages__guest {
   margin-bottom: 37px;
+}
+
+.packages__guest-room {
+  margin-bottom: 12px;
 }
 
 .packages__item {
