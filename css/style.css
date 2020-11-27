@@ -1228,7 +1228,7 @@ template {
       grid-template-areas: "card1 card1 card2" "card3 card4 card5";
 }
 
-.packages-card {
+.packages__card {
   background-color: #0A223D;
   color: #ffffff;
   border-radius: 8px;
@@ -1243,7 +1243,7 @@ template {
   position: relative;
 }
 
-.packages-card__secondary {
+.packages__card-secondary {
   max-width: 350px;
   background-color: #0A223D;
   color: #ffffff;
@@ -1400,10 +1400,10 @@ template {
         grid-template-columns: 327px 327px 327px;
     colomn-gap: 20px;
   }
-  .packages-card {
+  .packages__card {
     max-width: 634px;
   }
-  .packages-card__secondary {
+  .packages__card-secondary {
     max-width: 307px;
   }
   .packages__description {
@@ -1532,10 +1532,10 @@ template {
         grid-template-columns: 360px 360px;
         grid-template-areas: "card1 card1" "card2 card3" "card4 card5";
   }
-  .packages-card {
+  .packages__card {
     max-width: 700px;
   }
-  .packages-card__secondary {
+  .packages__card-secondary {
     max-width: 340px;
   }
   .packages__hotel-name2 {
@@ -1729,10 +1729,10 @@ template {
         grid-template-columns: 298px 298px;
         grid-template-areas: "card1 card1" "card2 card3" "card4 card5";
   }
-  .packages-card {
+  .packages__card {
     max-width: 576px;
   }
-  .packages-card__secondary {
+  .packages__card-secondary {
     max-width: 278px;
   }
   .packages__container {
@@ -1776,7 +1776,7 @@ template {
         grid-template-columns: 1fr;
         grid-template-areas: "card1";
   }
-  .packages-card__secondary {
+  .packages__card-secondary {
     display: none;
   }
   .packages__container {
@@ -1835,7 +1835,7 @@ template {
         grid-template-columns: 1fr;
         grid-template-areas: "card3" "card4";
   }
-  .packages-card {
+  .packages__card {
     display: none;
   }
   .packages-card3 {
