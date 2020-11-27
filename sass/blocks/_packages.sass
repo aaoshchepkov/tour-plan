@@ -1,5 +1,18 @@
 .packages
   padding: 42px 0 72px 0
+  &__offer
+    position: absolute
+    min-width: 60px
+    top: 26px
+    left: 0
+    font-size: 8px
+    line-height: 10px
+    padding: 4px 9px
+    &-first
+      min-width: 95px
+      font-size: 12px
+      line-height: 15px
+      padding: 8px 12px 7px 12px
   &__title
     font-weight: bold
     font-size: 36px
@@ -37,12 +50,14 @@
     max-height: 500px
     display: grid
     grid-template: 1fr / 1fr 1fr
+    position: relative
     &__secondary
       max-width: 350px
       background-color: $dark
       color: $light
       border-radius: 8px
       overflow: hidden
+      position: relative
   &__container
     padding: 39px 21px 30px 43px
     &-secondary

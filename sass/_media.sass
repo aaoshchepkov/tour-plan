@@ -13,7 +13,20 @@
   .card
     width: 220px
     height: 220px
-
+  .packages
+    padding: 32px 0 60px 0
+    &__wrapper
+      row-gap: 20px
+      grid-template-columns: 327px 327px 327px
+      colomn-gap: 20px
+    &-card
+      max-width: 634px
+      &__secondary
+        max-width: 307px
+    &__description
+      font-size: 13px
+      line-height: 160.6%
+      margin: 0 0 46px 0
 @media ( max-width:992px  )
   .container
     max-width: 700px
@@ -89,6 +102,25 @@
     width: 339px
     height: 255px
     padding-right: 70px
+  .packages
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin: 0 0 45px 0
+    &__wrapper
+      grid-template-rows: 500px 500px 500px
+      grid-template-columns: 360px 360px
+      grid-template-areas: "card1 card1" "card2 card3" "card4 card5"
+    &-card
+      max-width: 700px
+      &__secondary
+        max-width: 340px
+    &__hotel
+      &-name2
+        margin: 0 0 23px 0
+    &__guest
+      &-room2
+        margin-bottom: 24px
 
 @media (max-width: 767px)
   .container
@@ -203,6 +235,67 @@
       order: 1
     &:nth-child(3)
       margin-bottom: 28px
+  .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 40px 0
+    &__wrapper
+      grid-template-rows: 460px 460px 460px
+      grid-template-columns: 298px 298px
+      grid-template-areas: "card1 card1" "card2 card3" "card4 card5"
+    &-card
+      max-width: 576px
+      &__secondary
+        max-width: 278px
+
+    &__container
+      padding: 30px 21px 10px 43px
+      &-secondary
+        padding: 20px 21px 10px 30px
+
+    &__hotel
+      margin: 0 0 20px 0
+      &-name2
+        margin: 0 0 18px 0
+      &-name
+        margin: 0 0 18px 0
+    &__description
+      font-size: 12px
+      margin: 0 0 40px 0
+    &__guest
+      margin-bottom: 30px
+      &-room
+        margin-bottom: 14px
+      &-room2
+        margin-bottom: 14px
+    &__item
+      margin-bottom: 9px
+@media (max-width: 656px)
+  .packages
+    &__wrapper
+      grid-template-rows: 480px
+      grid-template-columns: 1fr
+      grid-template-areas: "card1"
+    &-card
+      &__secondary
+        display: none
+    &__container
+      padding: 20px 20px 20px 20px
+    &__hotel
+      margin: 0 0 15px 0
+    &__description
+      font-size: 12px
+      margin: 0 0 25px 0
+    &__guest
+      margin-bottom: 20px
+    &__item
+      margin-bottom: 8px
+    &__sale
+      flex-basis: 100%
+    &__pricetag
+      flex-basis: 100%
+      margin-bottom: 15px
 
 @media (max-width: 567px)
   .hotel
@@ -221,3 +314,51 @@
     &-slider
       &__text
         text-align: left
+
+  .packages
+    &__wrapper
+      grid-template-rows: 500px 500px
+      grid-template-columns: 1fr
+      grid-template-areas: "card3" "card4"
+    &-card
+      display: none
+    &-card3
+      display: block
+      max-width: 520px
+    &-card4
+      display: block
+      max-width: 520px
+    &__price
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      padding-left: 3px
+
+    &__pricetag
+      flex-basis: 49%
+
+    &__container
+      &-secondary
+        padding: 35px 21px 23px 30px
+
+    &__hotel
+      &-name
+        margin: 0 0 23px 0
+    &__guest
+      margin-bottom: 37px
+      &-room
+        margin-bottom: 24px
+    &__item
+      margin-bottom: 11px
+@media (max-width: 332px)
+  .packages
+    &__wrapper
+      grid-template-rows: 530px 530px
+    &__hotel
+      &-name
+        margin: 0 0 20px 0
+    &__guest
+      &-room
+        margin-bottom: 20px
+    &__item
+      margin-bottom: 10px
