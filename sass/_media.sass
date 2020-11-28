@@ -271,31 +271,33 @@
         margin-bottom: 14px
     &__item
       margin-bottom: 9px
+
 @media (max-width: 656px)
   .packages
+    &__title
+      font-size: 18px
+      line-height: 23px
+      margin: 0 0 40px 0
     &__wrapper
-      grid-template-rows: 480px
-      grid-template-columns: 1fr
-      grid-template-areas: "card1"
+      row-gap: 20px
+      grid-template-rows: 470px
+      grid-template-columns: 100%
+      grid-template-areas: "card1" "card2" "card3" "card4" "card5"
     &__card
+      max-width: 100%
+      flex-direction: column
       &-secondary
-        display: none
+        max-width: 100%
+
     &__container
-      padding: 20px 20px 20px 20px
-    &__hotel
-      margin: 0 0 15px 0
+      padding: 15px 21px 10px 30px
+    &__img
+      width: 100%
+      height: 50%
     &__description
-      font-size: 12px
-      margin: 0 0 25px 0
+      display: none
     &__guest
-      margin-bottom: 20px
-    &__item
-      margin-bottom: 8px
-    &__sale
-      flex-basis: 100%
-    &__pricetag
-      flex-basis: 100%
-      margin-bottom: 15px
+      margin-bottom: 24px
 
 @media (max-width: 567px)
   .hotel
@@ -314,51 +316,3 @@
     &-slider
       &__text
         text-align: left
-
-  .packages
-    &__wrapper
-      grid-template-rows: 500px 500px
-      grid-template-columns: 1fr
-      grid-template-areas: "card3" "card4"
-    &__card
-      display: none
-    &-card3
-      display: block
-      max-width: 520px
-    &-card4
-      display: block
-      max-width: 520px
-    &__price
-      display: flex
-      flex-wrap: wrap
-      justify-content: space-between
-      padding-left: 3px
-
-    &__pricetag
-      flex-basis: 49%
-
-    &__container
-      &-secondary
-        padding: 35px 21px 23px 30px
-
-    &__hotel
-      &-name
-        margin: 0 0 23px 0
-    &__guest
-      margin-bottom: 37px
-      &-room
-        margin-bottom: 24px
-    &__item
-      margin-bottom: 11px
-@media (max-width: 332px)
-  .packages
-    &__wrapper
-      grid-template-rows: 530px 530px
-    &__hotel
-      &-name
-        margin: 0 0 20px 0
-    &__guest
-      &-room
-        margin-bottom: 20px
-    &__item
-      margin-bottom: 10px
