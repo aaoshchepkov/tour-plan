@@ -1252,7 +1252,7 @@ template {
 
 .packages__container {
   padding: 39px 21px 30px 43px;
-  width: 100%;
+  width: 50%;
 }
 
 .packages__container-secondary {
@@ -1776,8 +1776,8 @@ template {
   }
   .packages__wrapper {
     row-gap: 20px;
-    -ms-grid-rows: 470px;
-        grid-template-rows: 470px;
+    -ms-grid-rows: 500px 470px 470px 470px 470px;
+        grid-template-rows: 500px 470px 470px 470px 470px;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
         grid-template-areas: "card1" "card2" "card3" "card4" "card5";
@@ -1793,6 +1793,7 @@ template {
     max-width: 100%;
   }
   .packages__container {
+    width: 100%;
     padding: 15px 21px 10px 30px;
   }
   .packages__img {
