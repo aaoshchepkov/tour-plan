@@ -1567,6 +1567,34 @@ template {
   border-radius: 4px;
 }
 
+.message__input::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message__input:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message__input::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message__input::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 .message__area {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -1576,6 +1604,34 @@ template {
   padding: 18px 23px;
   border-radius: 4px;
   margin-bottom: 20px;
+}
+
+.message__area::-webkit-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message__area:-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message__area::-ms-input-placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.message__area::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .message__button {
