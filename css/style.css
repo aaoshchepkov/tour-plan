@@ -459,6 +459,22 @@ template {
   color: #333333;
 }
 
+.search__input::-webkit-input-placeholder {
+  font-size: 12px;
+}
+
+.search__input:-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.search__input::-ms-input-placeholder {
+  font-size: 12px;
+}
+
+.search__input::placeholder {
+  font-size: 12px;
+}
+
 .search__button {
   position: absolute;
   top: 0;
@@ -904,6 +920,30 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  color: #BDBDBD;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 14px;
+  color: #BDBDBD;
+}
+
+.subscribe__input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
   color: #BDBDBD;
 }
 
