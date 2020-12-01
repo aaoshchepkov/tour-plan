@@ -1,0 +1,148 @@
+.footer
+  background-color: $dark
+  padding: 108px 0 46px 0
+  color: $light
+  &__wrapper
+    display: grid
+    grid-template-rows: 195px 115px 200px 200px 50px
+    grid-template-columns: 285px 285px 345px 1fr
+    grid-template-areas: "logo categories additional legal" "logo categories social social""contact contact message message""contact contact message message" "political political political political"
+  &__logo
+    &-link
+      grid-area: logo
+      max-height: 180px
+      margin-top: 30px
+  &__categories
+    grid-area: categories
+  &__additional
+    grid-area: additional
+  &__legal
+    grid-area: legal
+  &__title
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0 0 18px 0
+    text-transform: uppercase
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+  &__item
+    font-size: 14px
+    line-height: 160%
+    font-weight: normal
+    color: $grey
+  &__link
+    text-decoration: none
+    font-size: 14px
+    line-height: 160%
+    font-weight: normal
+    color: $grey
+  &__social
+    grid-area: social
+    display: flex
+    align-items: start
+    &-title
+      margin: 0 44px 0 0
+  &__icon
+    margin-right: 12px
+    &-map
+      margin-top: 5px
+      margin-left: 5px
+      margin-right: 23px
+    &-phone
+      margin-top: 5px
+      margin-left: 3px
+      margin-right: 19px
+    &-mail
+      margin-top: 4px
+      margin-left: 3px
+      margin-right: 21px
+    &-link
+      max-height: 20px
+  &__contact
+    grid-area: contact
+    margin-top: 12px
+    &-title
+      margin-bottom: 25px
+      margin-left: -3px
+  &__text
+    margin: 0 0 23px -3px
+  &__contacts
+    display: flex
+    align-items: start
+    margin: 0 0 19px 0
+    &-list
+      margin-bottom: 5px
+
+.message
+  grid-area: message
+  &__title
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    margin: 0 0 35px 0
+    text-transform: uppercase
+  &__form
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+  &__input
+    flex-basis: 100%
+    border: none
+    margin-bottom: 16px
+    max-width: 254px
+    height: 50px
+    padding: 18px 23px
+    border-radius: 4px
+  &__area
+    flex-basis: 100%
+    border: none
+    resize: none
+    max-width: 540px
+    padding: 18px 23px
+    border-radius: 4px
+    margin-bottom: 20px
+  &__button
+    border: none
+    cursor: pointer
+    border-radius: 4px
+    background-color: $primary
+    padding: 18px
+    min-width: 160px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+  &__info
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: #E0E0E0
+    margin-left: 277px
+.politics
+  grid-area: political
+  display: flex
+  align-items: center
+  align-self: center
+  justify-content: space-between
+  margin-left: 372px
+  margin-top: 6px
+  &__list
+    list-style: none
+    margin: 0
+    display: flex
+  &__item
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    margin: 0 14px 0 0
+  &__link
+    color: $light
+    text-decoration: none
+  &__partners
+    width: 136px
+    height: 22px
+    margin-top: -5px

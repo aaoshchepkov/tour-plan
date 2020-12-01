@@ -1154,7 +1154,7 @@ template {
 }
 
 .packages {
-  padding: 42px 0 72px 0;
+  padding: 42px 0 69px 0;
 }
 
 .packages__offer {
@@ -1371,6 +1371,273 @@ template {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+  margin-top: -5px;
+}
+
+.footer {
+  background-color: #0A223D;
+  padding: 108px 0 46px 0;
+  color: #ffffff;
+}
+
+.footer__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 195px 115px 200px 200px 50px;
+      grid-template-rows: 195px 115px 200px 200px 50px;
+  -ms-grid-columns: 285px 285px 345px 1fr;
+      grid-template-columns: 285px 285px 345px 1fr;
+      grid-template-areas: "logo categories additional legal" "logo categories social social" "contact contact message message" "contact contact message message" "political political political political";
+}
+
+.footer__logo-link {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: logo;
+  max-height: 180px;
+  margin-top: 30px;
+}
+
+.footer__categories {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: categories;
+}
+
+.footer__additional {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: additional;
+}
+
+.footer__legal {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: legal;
+}
+
+.footer__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 18px 0;
+  text-transform: uppercase;
+}
+
+.footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  font-size: 14px;
+  line-height: 160%;
+  font-weight: normal;
+  color: #BDBDBD;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 160%;
+  font-weight: normal;
+  color: #BDBDBD;
+}
+
+.footer__social {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: social;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.footer__social-title {
+  margin: 0 44px 0 0;
+}
+
+.footer__icon {
+  margin-right: 12px;
+}
+
+.footer__icon-map {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 23px;
+}
+
+.footer__icon-phone {
+  margin-top: 5px;
+  margin-left: 3px;
+  margin-right: 19px;
+}
+
+.footer__icon-mail {
+  margin-top: 4px;
+  margin-left: 3px;
+  margin-right: 21px;
+}
+
+.footer__icon-link {
+  max-height: 20px;
+}
+
+.footer__contact {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: contact;
+  margin-top: 12px;
+}
+
+.footer__contact-title {
+  margin-bottom: 25px;
+  margin-left: -3px;
+}
+
+.footer__text {
+  margin: 0 0 23px -3px;
+}
+
+.footer__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 0 0 19px 0;
+}
+
+.footer__contacts-list {
+  margin-bottom: 5px;
+}
+
+.message {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+}
+
+.message__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin: 0 0 35px 0;
+  text-transform: uppercase;
+}
+
+.message__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.message__input {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border: none;
+  margin-bottom: 16px;
+  max-width: 254px;
+  height: 50px;
+  padding: 18px 23px;
+  border-radius: 4px;
+}
+
+.message__area {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  border: none;
+  resize: none;
+  max-width: 540px;
+  padding: 18px 23px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.message__button {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  padding: 18px;
+  min-width: 160px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.message__info {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+  margin-left: 277px;
+}
+
+.politics {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: political;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 372px;
+  margin-top: 6px;
+}
+
+.politics__list {
+  list-style: none;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.politics__item {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 14px 0 0;
+}
+
+.politics__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.politics__partners {
+  width: 136px;
+  height: 22px;
   margin-top: -5px;
 }
 
