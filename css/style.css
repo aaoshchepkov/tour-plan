@@ -31,6 +31,10 @@ img {
   border-radius: 4px;
 }
 
+.br {
+  display: block;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1553,8 +1557,8 @@ template {
 }
 
 .message__input {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
   border: none;
   margin-bottom: 16px;
   max-width: 254px;
@@ -1678,6 +1682,22 @@ template {
     line-height: 160.6%;
     margin: 0 0 46px 0;
   }
+  .footer {
+    background-color: #0A223D;
+    padding: 108px 0 46px 0;
+    color: #ffffff;
+  }
+  .footer__wrapper {
+    grid-column-gap: 15px;
+    -ms-grid-columns: 205px 235px 275px 200px;
+        grid-template-columns: 205px 235px 275px 200px;
+  }
+  .message__input {
+    max-width: 240px;
+  }
+  .message__info {
+    margin-left: 210px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1773,7 +1793,7 @@ template {
     right: 0px;
   }
   .activities {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
   }
   .activities__cards {
     -ms-flex-wrap: wrap;
@@ -1810,6 +1830,58 @@ template {
   }
   .packages__guest-room2 {
     margin-bottom: 24px;
+  }
+  .footer {
+    background-color: #0A223D;
+    padding: 108px 0 46px 0;
+    color: #ffffff;
+  }
+  .footer__wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 125px 265px 318px 360px 50px;
+        grid-template-rows: 125px 265px 318px 360px 50px;
+    grid-column-gap: 10px;
+    -ms-grid-columns: 190px 287px 200px;
+        grid-template-columns: 190px 287px 200px;
+        grid-template-areas: "logo social social" "categories additional legal" "contact contact contact" "message message message" "political political political";
+  }
+  .footer__logo-link {
+    max-height: 110px;
+    max-width: 95px;
+    margin-top: -35px;
+  }
+  .footer__social {
+    margin-top: 14px;
+    margin-left: -15px;
+  }
+  .footer__social-title {
+    margin: 0px 44px 0 0;
+  }
+  .message__form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .message__input {
+    margin-right: 30px;
+    min-width: 254px;
+    margin-bottom: 15px;
+  }
+  .message__area {
+    max-height: 123px;
+  }
+  .message__info {
+    margin-left: 270px;
+  }
+  .politics {
+    margin-left: 0px;
+  }
+  .politics__list {
+    padding: 0;
+  }
+  .politics__info {
+    margin-left: 270px;
   }
 }
 
@@ -2033,6 +2105,19 @@ template {
   .packages__item {
     margin-bottom: 9px;
   }
+  .footer__wrapper {
+    -ms-grid-rows: 125px 170px 265px 318px 410px 50px;
+        grid-template-rows: 125px 170px 265px 318px 410px 50px;
+    -ms-grid-columns: 190px 287px 30px;
+        grid-template-columns: 190px 287px 30px;
+        grid-template-areas: "logo social social" "legal legal legal" "categories additional additional" "contact contact contact" "message message message" "political political political";
+  }
+  .message__input {
+    min-width: 100%;
+  }
+  .message__info {
+    margin-left: 240px;
+  }
 }
 
 @media (max-width: 656px) {
@@ -2075,7 +2160,7 @@ template {
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 590px) {
   .hotel {
     padding-bottom: 40px;
   }
@@ -2096,6 +2181,108 @@ template {
   }
   .reviews-slider__text {
     text-align: left;
+  }
+  .activities {
+    padding-bottom: 40px;
+  }
+  .footer {
+    padding-bottom: 5px;
+  }
+  .footer__wrapper {
+    -ms-grid-rows: 112px 98px 155px 200px 248px 402px 390px 80px;
+        grid-template-rows: 112px 98px 155px 200px 248px 402px 390px 80px;
+    -ms-grid-columns: minmax(280px, 570px);
+        grid-template-columns: minmax(280px, 570px);
+        grid-template-areas: "logo" "social" "legal" "additional" "categories" "contact" "message" "political";
+  }
+  .footer__title {
+    margin-bottom: 16px;
+  }
+  .footer__logo-link {
+    margin-top: -40px;
+  }
+  .footer__social {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  .footer__social-title {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .footer__icon {
+    margin-left: -2px;
+  }
+  .footer__icon-map {
+    margin-right: 12px;
+  }
+  .footer__icon-phone {
+    margin-left: 2px;
+    margin-right: 8px;
+  }
+  .footer__icon-mail {
+    margin-right: 10px;
+  }
+  .footer__icon-link {
+    margin-top: -25px;
+    margin-left: 3px;
+  }
+  .footer__item {
+    margin-left: 0;
+  }
+  .footer__categories-title {
+    margin-bottom: 19px;
+  }
+  .footer__contact-title {
+    margin-bottom: 23px;
+    margin-left: 0px;
+  }
+  .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .message__title {
+    margin-bottom: 15px;
+  }
+  .message__input {
+    min-width: 100%;
+  }
+  .message__area {
+    min-width: 100%;
+  }
+  .message__info {
+    margin: -3px 0 14px 0;
+  }
+  .message__button {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 150px;
+  }
+  .politics {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+  }
+  .politics__list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .politics__item {
+    margin: 19px 0 13px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
