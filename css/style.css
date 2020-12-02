@@ -433,6 +433,10 @@ template {
   text-transform: uppercase;
 }
 
+.navbar-menu__item--visible {
+  display: none;
+}
+
 .logo {
   width: 177px;
 }
@@ -1986,13 +1990,81 @@ template {
     max-width: 576px;
     width: 88%;
   }
-  .navbar__search, .navbar-menu, .navbar__user {
+  body {
+    padding-top: 70px;
+  }
+  .navbar__fixed {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    right: 0;
+  }
+  .navbar__search--hidden {
     display: none;
+  }
+  .navbar__search--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 23px;
+  }
+  .navbar__user--hidden {
+    display: none;
+  }
+  .navbar__user--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+  }
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 31px 18px 68px 18px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 15px;
+  }
+  .navbar-menu__item--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
   }
   .navbar-top {
     padding: 22px 0  30px 0;
   }
+  .user__name--light {
+    margin: 10px 0 0 0;
+    color: #ffffff;
+  }
   .menu-button {
+    margin-top: 4px;
     width: 16px;
     height: 11px;
     padding: 0;
