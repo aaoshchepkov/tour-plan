@@ -10,6 +10,19 @@
     display: flex
     flex-wrap: wrap
     align-items: center
+  &__button
+    text-decoration: none
+    border: none
+    cursor: pointer
+    border-radius: 4px
+    background-color: $primary
+    padding: 18px 70px
+    min-width: 160px
+    font-weight: bold
+    font-size: 12px
+    line-height: 15px
+    color: $light
+
   &-info
     display: flex
     align-items: center
@@ -68,6 +81,12 @@
       &--next
         right: 18px
         background-image: url(../img/arrow-next.svg)
+  &__wrapper
+    display: flex
+    flex-direction: column
+    margin: auto
+  &__thank
+    margin-bottom: 40px
 .stars
   flex-basis: 100%
   margin-bottom: 2px

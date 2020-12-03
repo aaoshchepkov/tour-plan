@@ -134,15 +134,10 @@
     <!-- /.container -->
     <section class="hotel">
       <div class="container">
-        <div class="hotel-info hotel-info__position">
-          <div class="hotel-info__text">
-            <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Спасибо за обращение.</h1>
-            </div>
-          </div>
-          <!-- /.hotel-info-rating -->
+        <div class="hotel-wrapper hotel__wrapper">
+          <h1 class="hotel-name hotel__thank">Thank you for contacting us.</h1>
+          <a href="index.html" class="hotel__button">Previous</a>
         </div>
-        <!-- /.hotel-info -->
       </div>
       <!-- /.container -->
     </section>
@@ -304,12 +299,14 @@
                 class="message__input"
                 placeholder="Your Full Name*"
                 name="name"
+                required
               />
               <input
                 type="tel"
                 class="message__input"
                 placeholder="Phone Number*"
                 name="phone"
+                required
               />
               <textarea
                 class="message__area"
@@ -317,9 +314,9 @@
                 cols="60"
                 rows="5"
                 placeholder="Message"
-                name="message"
+                required
               ></textarea>
-              <button class="message__button" typу="submit">Send</button>
+              <button class="message__button" type="submit">Send</button>
               <span class="message__info">* Required Fields</span>
             </form>
           </div>
