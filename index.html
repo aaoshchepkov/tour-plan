@@ -884,16 +884,18 @@
           <!-- /.contact -->
           <div class="message">
             <h3 class="message__title">Send us a message</h3>
-            <form action="#" class="message__form">
+            <form action="send.php" method="POST" class="message__form">
               <input
                 type="text"
                 class="message__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="tel"
                 class="message__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="message__area"
@@ -901,10 +903,11 @@
                 cols="60"
                 rows="5"
                 placeholder="Message"
+                name="message"
               ></textarea>
+              <button class="message__button" typу="submit">Send</button>
+              <span class="message__info">* Required Fields</span>
             </form>
-            <button class="message__button">Send</button>
-            <span class="message__info">* Required Fields</span>
           </div>
           <!-- /.message -->
           <div class="politics">

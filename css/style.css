@@ -2415,6 +2415,11 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .message__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .message__title {
     margin-bottom: 15px;
   }
@@ -2426,6 +2431,8 @@ template {
   }
   .message__info {
     margin: -3px 0 14px 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .message__button {
     -webkit-box-ordinal-group: 3;
