@@ -545,15 +545,17 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
         <form
-          action="mailto:example@example.com"
+          action="send.php"
+          method="POST"
           class="subscribe newsletter__subscribe"
         >
           <input
-            type="text"
+            type="email"
             placeholder="Your email address"
             class="subscribe__input"
+            name="email"
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
       <!-- /.newsletter-wrapper -->
