@@ -2030,6 +2030,7 @@ template {
             justify-content: center;
   }
   .navbar-bottom {
+    overflow-y: scroll;
     display: none;
     position: fixed;
     left: 0;
