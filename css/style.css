@@ -2486,11 +2486,7 @@ template {
     margin-left: 240px;
   }
   .modal__dialog {
-    overflow-y: scroll;
     padding: 33px 70px;
-  }
-  .modal__overlay {
-    overflow-y: scroll;
   }
 }
 
@@ -2670,7 +2666,7 @@ template {
   }
   .modal__dialog {
     min-width: 80%;
-    padding: 33px 70px;
+    padding: 33px 60px;
   }
   .modal__input {
     width: 100%;
@@ -2682,7 +2678,30 @@ template {
 
 @media (max-width: 410px) {
   .modal__dialog {
-    padding: 33px 50px;
+    padding: 33px 30px;
+  }
+}
+
+@media only screen and (max-height: 595px) {
+  .modal__dialog {
+    position: fixed;
+    overflow: auto;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@media only screen and (max-height: 520px) {
+  .modal__dialog {
+    position: fixed;
+    overflow: auto;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    height: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
