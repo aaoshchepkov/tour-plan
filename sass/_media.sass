@@ -1,3 +1,28 @@
+@media(hover: hover) and (pointer: fine)
+  a
+    transition: 0.2s
+    &:hover
+      color: $primary
+      font-size: 1.1em
+  button
+    &:hover
+      background-color: $button-color
+
+  input
+    &:hover
+      background-color: $input-color
+  textarea
+    &:hover
+      background-color: $input-color
+  .user
+    &:hover
+      color: $primary
+  .footer
+    &__icon
+      &-link
+        &:hover
+          margin-top: 3px
+
 @media ( max-width:1200px)
   .container
     max-width: 960px

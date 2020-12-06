@@ -1,5 +1,6 @@
 .navbar
   background-color: $light
+
   &-top
     display: flex
     align-items: center
@@ -22,6 +23,7 @@
     display: flex
     justify-content: space-between
     align-items: center
+    font-size: 13px
     &__link
       color: $light
       text-decoration: none
@@ -41,6 +43,7 @@
   overflow: hidden
   border-radius: 6px
   height: 40px
+
   &__input
     width: 350px
     height: 100%
@@ -51,8 +54,11 @@
     padding-left: 23px
     padding-right: 75px
     color: $text-color
+    outline: none
     &::placeholder
       font-size: 12px
+      color: #BDBDBD
+      transition: opacity 2s
   &__button
     position: absolute
     top: 0
@@ -62,11 +68,16 @@
     border: none
     background-color: $primary
     cursor: pointer
+    outline: none
 
 .user
   display: flex
   align-items: center
   text-decoration: none
+  font-size: 14px
+  line-height: 18px
+  color: $text-color
+
   &__img
     width: 40px
     height: 40px
@@ -74,6 +85,4 @@
     object-fit: cover
   &__name
     margin-left: 18px
-    color: $text-color
-    font-size: 14px
-    line-height: 18px
+    color: inherit
