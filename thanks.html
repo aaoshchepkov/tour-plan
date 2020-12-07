@@ -293,28 +293,33 @@
           <!-- /.contact -->
           <div class="message">
             <h3 class="message__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="message__form">
-              <input
-                type="text"
-                class="message__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-              />
-              <input
-                type="tel"
-                class="message__input"
-                placeholder="Phone Number*"
-                name="phone"
-                required
-              />
+            <form action="send.php" method="POST" class="message__form form">
+              <div class="message__input-group">
+                <input
+                  type="text"
+                  class="message__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  minlength="2"
+                  required
+                />
+              </div>
+              <div class="message__input-group">
+                <input
+                  type="tel"
+                  class="message__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
+
               <textarea
                 class="message__area"
                 name="message"
                 cols="60"
                 rows="5"
                 placeholder="Message"
-                required
               ></textarea>
               <button class="message__button" type="submit">Send</button>
               <span class="message__info">* Required Fields</span>
