@@ -446,7 +446,6 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 13px;
 }
 
 .navbar-menu__link {
@@ -2026,13 +2025,14 @@ template {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  a {
+  a, li {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  a:hover {
+  a:hover, li:hover {
     color: #EC1F46;
-    font-size: 1.1em;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
   button:hover {
     background-color: #bb0a2b;
@@ -2046,8 +2046,10 @@ template {
   .user:hover {
     color: #EC1F46;
   }
-  .footer__icon-link:hover {
-    margin-top: 3px;
+  .footer__item-nothover:hover {
+    color: #BDBDBD;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -2589,6 +2591,7 @@ template {
   }
   .message__input-group {
     min-width: 100%;
+    margin-right: 0;
   }
   .message__info {
     margin-left: 240px;
@@ -2670,8 +2673,8 @@ template {
     padding-bottom: 5px;
   }
   .footer__wrapper {
-    -ms-grid-rows: 112px 98px 155px 200px 248px 402px 390px 80px;
-        grid-template-rows: 112px 98px 155px 200px 248px 402px 390px 80px;
+    -ms-grid-rows: 112px 98px 155px 200px 248px 402px auto 80px;
+        grid-template-rows: 112px 98px 155px 200px 248px 402px auto 80px;
     -ms-grid-columns: minmax(280px, 570px);
         grid-template-columns: minmax(280px, 570px);
         grid-template-areas: "logo" "social" "legal" "additional" "categories" "contact" "message" "political";
@@ -2734,9 +2737,6 @@ template {
   }
   .message__title {
     margin-bottom: 15px;
-  }
-  .message__input {
-    min-width: 100%;
   }
   .message__area {
     min-width: 100%;
