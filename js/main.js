@@ -78,6 +78,7 @@ $('.form').each(function() {
     },
     phone: {
       required: "Please specify your phone number",
+      minlength: "Your phone number must be in the format of +7 (xxx) xxx-xx-xx"
   },
   },
 });
