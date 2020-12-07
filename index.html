@@ -911,28 +911,32 @@
           <!-- /.contact -->
           <div class="message">
             <h3 class="message__title">Send us a message</h3>
-            <form action="send.php" method="POST" class="message__form">
-              <input
-                type="text"
-                class="message__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-              />
-              <input
-                type="tel"
-                class="message__input"
-                placeholder="Phone Number*"
-                name="phone"
-                required
-              />
+            <form action="send.php" method="POST" class="message__form form">
+              <div class="message__input-group">
+                <input
+                  type="text"
+                  class="message__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="message__input-group">
+                <input
+                  type="tel"
+                  class="message__input phone"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                />
+              </div>
+
               <textarea
                 class="message__area"
                 name="message"
                 cols="60"
                 rows="5"
                 placeholder="Message"
-                required
               ></textarea>
               <button class="message__button" type="submit">Send</button>
               <span class="message__info">* Required Fields</span>
@@ -970,17 +974,18 @@
           <img src="img/close.svg" alt="Icon: Close" />
         </a>
         <h3 class="modal__title">Booking</h3>
-        <form action="send.php" method="POST" class="modal__form">
+        <form action="send.php" method="POST" class="modal__form form">
           <input
             type="text"
             class="modal__input"
             placeholder="Your Full Name*"
             name="name"
+            minlength="2"
             required
           />
           <input
             type="tel"
-            class="modal__input"
+            class="modal__input phone"
             placeholder="Phone Number*"
             name="phone"
             required
@@ -996,7 +1001,6 @@
             class="modal__area"
             name="message"
             placeholder="Message"
-            required
           ></textarea>
           <button class="modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
@@ -1007,6 +1011,8 @@
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

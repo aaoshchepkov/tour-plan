@@ -61,7 +61,8 @@
       grid-template-columns: 205px 235px 275px 200px
   .message
     &__input
-      max-width: 240px
+      &-group
+        max-width: 240px
     &__info
       margin-left: 210px
 
@@ -183,9 +184,10 @@
     &__form
       justify-content: start
     &__input
-      margin-right: 30px
-      min-width: 254px
-      margin-bottom: 15px
+      &-group
+        margin-right: 30px
+        min-width: 254px
+        margin-bottom: 15px
     &__area
       max-height: 123px
     &__info
@@ -398,7 +400,8 @@
       grid-template-areas: "logo social social" "legal legal legal" "categories additional additional" "contact contact contact" "message message message" "political political political"
   .message
     &__input
-      min-width: 100%
+      &-group
+        min-width: 100%
     &__info
       margin-left: 240px
   .modal
