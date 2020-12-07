@@ -83,15 +83,6 @@ $('.form').each(function() {
 });
 });
 
-$('.subscribe').validate({
-  errorClass: "invalid1",
-  messages: {
-    email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
-    },
-  },
-});
 
 jQuery(document).ready(function(){
 	$('.phone').mask('+7 (999) 999-99-99')

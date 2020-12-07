@@ -38,11 +38,12 @@
 .subscribe
   position: relative
   width: 350px
+  height: 80px
+  width: 350px
   height: 55px
   border-radius: 4px
-  overflow: hidden
+
   &__input
-    position: absolute
     width: 100%
     height: 100%
     padding-left: 33px
@@ -51,6 +52,7 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
+    border-radius: 4px
 
     &::placeholder
       font-weight: 300
@@ -62,6 +64,7 @@
     top: 0
     height: 100%
     border: none
+    border-radius: 0 4px 4px 0
     background-color: $primary
     color: $light
     min-width: 65px

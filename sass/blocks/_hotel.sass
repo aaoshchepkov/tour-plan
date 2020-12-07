@@ -118,7 +118,7 @@
 .text-sub
   font-size: 10px
 .booking
-  padding: 29px 29px 26px 26px
+  padding: 29px 31px 26px 26px
   border-radius: 8px
   background-color: $dark
   display: flex
@@ -132,9 +132,9 @@
     justify-content: space-between
   &__text
     display: flex
-    align-items: center
+    align-items: star
     justify-content: space-between
-    margin-bottom: 9px
+    margin-bottom: 10px
   &__price
     display: flex
     flex-direction: column
@@ -142,6 +142,7 @@
   &__start
     font-size: 10px
     line-height: 12px
+    margin-bottom: 2px
 
   &__pricetag
     font-size: 24px
@@ -151,31 +152,40 @@
   &__per-room
     font-size: 12px
     line-height: 14px
+
   &__person-room
     display: flex
     flex-direction: column
     justify-content: space-between
-    align-items: flex-end
-    height: 40px
+    height: 45px
   &__room
-    margin-bottom: 5px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 20px
+
   &__guests
-    margin-top: -4px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 20px
+    margin-bottom: 5px
+    margin-top: 3px
+
     &-room
       font-size: 12px
-      line-height: 14px
 
   &__image
     width: 14px
     height: 14px
-    margin-right: 4px
+    margin-right: 8px
     &-home
-      margin-right: 8px
+      margin-right: 12px
   &__call
     display: flex
     align-items: center
     justify-content: space-between
-    margin-bottom: 20px
+    margin-bottom: 18px
 
     &-choice
       font-size: 18px
