@@ -1,5 +1,5 @@
 @media(hover: hover) and (pointer: fine)
-  a,li
+  a
     transition: 0.2s
     &:hover
       color: $primary
@@ -17,13 +17,19 @@
   .user
     &:hover
       color: $primary
+  .politics li
+    &:hover
+      transform: translateY(-2px)
   .footer
-    &__item
-      &-nothover
-        &:hover
-          color: $grey
-          transform: translateY(0px)
-
+    &__legal li, &__additional li, &__categories li
+      &:hover
+        transform: translateY(-2px)
+  .navbar
+    &-menu
+      &__item
+        &:nth-child(n+3)
+          &:hover
+            transform: translateY(-2px)
 @media ( max-width:1200px)
   .container
     max-width: 960px
@@ -360,6 +366,8 @@
       order: 1
     &:nth-child(3)
       margin-bottom: 28px
+    &__br
+      display: block
   .packages
     &__title
       font-size: 18px
@@ -458,6 +466,8 @@
         text-align: left
   .activities
     padding-bottom: 40px
+  .card
+    padding-right: 20px
   .footer
     padding-bottom: 5px
     &__wrapper

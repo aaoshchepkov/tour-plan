@@ -31,8 +31,8 @@ img {
   border-radius: 4px;
 }
 
-.br {
-  display: block;
+.card__br {
+  display: none;
 }
 
 button {
@@ -491,29 +491,25 @@ template {
 .search__input::-webkit-input-placeholder {
   font-size: 12px;
   color: #BDBDBD;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  opacity: 100%;
 }
 
 .search__input:-ms-input-placeholder {
   font-size: 12px;
   color: #BDBDBD;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  opacity: 100%;
 }
 
 .search__input::-ms-input-placeholder {
   font-size: 12px;
   color: #BDBDBD;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  opacity: 100%;
 }
 
 .search__input::placeholder {
   font-size: 12px;
   color: #BDBDBD;
-  -webkit-transition: opacity 2s;
-  transition: opacity 2s;
+  opacity: 100%;
 }
 
 .search__button {
@@ -1026,24 +1022,28 @@ template {
   font-weight: 300;
   font-size: 14px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .subscribe__input:-ms-input-placeholder {
   font-weight: 300;
   font-size: 14px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .subscribe__input::-ms-input-placeholder {
   font-weight: 300;
   font-size: 14px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .subscribe__input::placeholder {
   font-weight: 300;
   font-size: 14px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .subscribe__button {
@@ -1074,6 +1074,10 @@ template {
   text-align: center;
   text-transform: uppercase;
   margin: 0 0 70px 0;
+}
+
+.reviews__title-text {
+  white-space: nowrap;
 }
 
 .reviews-slider__item {
@@ -1889,6 +1893,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__input:-ms-input-placeholder {
@@ -1896,6 +1901,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__input::-ms-input-placeholder {
@@ -1903,6 +1909,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__input::placeholder {
@@ -1910,6 +1917,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__input-group {
@@ -1934,6 +1942,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__area:-ms-input-placeholder {
@@ -1941,6 +1950,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__area::-ms-input-placeholder {
@@ -1948,6 +1958,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__area::placeholder {
@@ -1955,6 +1966,7 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+  opacity: 100%;
 }
 
 .message__button {
@@ -1976,6 +1988,9 @@ template {
   line-height: 15px;
   color: #E0E0E0;
   margin-left: 277px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .politics {
@@ -2025,11 +2040,11 @@ template {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  a, li {
+  a {
     -webkit-transition: 0.2s;
     transition: 0.2s;
   }
-  a:hover, li:hover {
+  a:hover {
     color: #EC1F46;
     -webkit-transform: translateY(-2px);
             transform: translateY(-2px);
@@ -2046,10 +2061,17 @@ template {
   .user:hover {
     color: #EC1F46;
   }
-  .footer__item-nothover:hover {
-    color: #BDBDBD;
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px);
+  .politics li:hover {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  .footer__legal li:hover, .footer__additional li:hover, .footer__categories li:hover {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  .navbar-menu__item:nth-child(n+3):hover {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
   }
 }
 
@@ -2533,6 +2555,9 @@ template {
   .card:nth-child(3) {
     margin-bottom: 28px;
   }
+  .card__br {
+    display: block;
+  }
   .packages__title {
     font-size: 18px;
     line-height: 23px;
@@ -2668,6 +2693,9 @@ template {
   }
   .activities {
     padding-bottom: 40px;
+  }
+  .card {
+    padding-right: 20px;
   }
   .footer {
     padding-bottom: 5px;
