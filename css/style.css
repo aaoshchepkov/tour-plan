@@ -942,6 +942,9 @@ template {
   overflow: hidden;
   width: 350px;
   height: 213px;
+  padding: 0;
+  background-image: url(/img/google-map.jpg);
+  background-position: center center;
 }
 
 .newsletter {
